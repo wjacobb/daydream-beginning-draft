@@ -44,18 +44,23 @@ function Header() {
             },
         })
     }
+    const [menuItem, setMenuItem] = useState('')
+    const handleChange = (e) => {
+        setMenuItem(e.target.value)
+    }
 
     return (
         <header className="sticky top-0 z-50 grid grid-cols-3 bg-secondary shadow-md p-5 md:px-10 ">
             {/* Left */}
             <div 
-                onClick={() => router.push("/")}
-                className='relative flex items-center h-10 
+                
+                className='relative flex justify-start h-10 
                 cursor-pointer my-auto'>
                 <Image src="https://links.papareact.com/qd3"
                     layout="fill"
                     objectFit="contain" 
                     objectPosition="left"
+                    onClick={() => router.push("/")}
                 />
             </div>
 
@@ -79,14 +84,34 @@ function Header() {
 
             {/* Right */}
             <div className='flex items-center space-x-4 justify-end text-white'>
-                <p className='hidden md:inline cursor-pointer'>Become a host</p>
-                <GlobeAltIcon className='h-6 cursor-pointer' />
+                {/* Header tabs */}
+                <p className='hidden md:inline cursor-pointer'>Cars</p>
+                <p className='hidden md:inline cursor-pointer'>My Trips</p>
 
                 <div className='flex items-center space-x-2 border-2 p-2 rounded-full'>
-                    <MenuIcon className='h-6'/>
-                    <UserCircleIcon className='h-6'/>
+                    
+
+
+                    {/*  */}
+                    {/* <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button"><svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    
+                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                        <li>
+                            <a href="https://1p4xnw9vz583g92k7249hwjj-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/pawhold.jpg" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">dog</a>
+                        </li>
+                        <li>
+                            <a href="https://memesboy.com/wp-content/uploads/2018/04/You-Cant-See-Me-Dogs-Meme.jpg" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">doggo</a>
+                        </li>
+                        <li>
+                            <a href="http://fallinpets.com/wp-content/uploads/2019/08/Hilarious-and-Funniest-Dog-Memes-Of-The-Day-50-pics-6.jpg" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">do</a>
+                        </li>
+                        </ul>
+                    </div> */}
+                    
                 </div>
             </div>
+            {/* Calendar operation */}
             {searchInput && (
                 <div className='flex flex-col col-span-3 mx-auto mt-5'>
                     <DateRangePicker ranges={[selectionRange]} 

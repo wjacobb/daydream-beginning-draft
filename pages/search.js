@@ -2,6 +2,7 @@ import { useRouter } from "next/dist/client/router";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {format} from 'date-fns'
+import Card from '../components/CarCards'
 
 function Search({searchResults}) {
     const router = useRouter();
@@ -30,6 +31,8 @@ function Search({searchResults}) {
                     </div>
                 </section>
             </main>
+            {/* This is the CarCard.js file */}
+            <Card />
 
             <Footer />
         </div>
