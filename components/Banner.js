@@ -10,9 +10,14 @@ function Banner() {
             layout='fill'
             objectFit='cover'
             />
-            {/* <div className="absolute top-1/2 w-full text-center text-white">
-                <p className="text-sm sm:text-lg">Book a trip in just a few easy steps!</p>
-            </div> */}
+            <button className="text-white bg-blue-700 absolute top-1/3 left-12 px-4 py-1 rounded-md hover:scale-105 transition ease-in-out hover:shadow-xl">
+                <div className="text-xl font-extrabold text-left">
+                    <h1>&emsp;Date</h1>
+                </div>
+                <div>
+                    <h2>When do you need a car?</h2>
+                </div>
+            </button>   
         </div>
     );
 }
