@@ -2,7 +2,7 @@
 module.exports = {
   
   images: {
-    domains: ['links.papareact.com'],
+    domains: ['images.turo.com'],
   },
 
   // reactStrictMode: true,

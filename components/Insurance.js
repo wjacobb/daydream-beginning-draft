@@ -20,73 +20,73 @@ function Insurance() {
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Road} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Unlimited miles</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Unlimited miles</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Cooler} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Cooler</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Cooler</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Racetrack} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Racetrack package</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Racetrack package</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Ski} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Ski rack</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Ski rack</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Chair} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Camp chairs</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Camp chairs</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Sun} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Sun shade</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Sun shade</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Fuel} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Prepaid refuel</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Prepaid refuel</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Camp} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Camp text</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Camp text</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Roof} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Roof storage</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Roof storage</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Carseat} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Child carseat</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Child carseat</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Parks} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">National Parks pass</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">National Parks pass</button>                
                 </div>
                 <div className='flex items-center ml-8'>
                     <div className='relative h-10 w-10 mx-2'>
                         <Image alt='my-image' src={Radar} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg focus:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-1000 active:shadow-lg transition duration-150 ease-in-out hover:scale-105">Radar detector</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Radar detector</button>                
                 </div>
             </section>
             
