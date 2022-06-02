@@ -5,16 +5,25 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import LargeCard from "../components/LargeCard";
 import Price from "../components/Price";
-import Cars from "../components/CarCards";
+import CarCards from "../components/CarCards";
 import Calendar from "../components/Calendar";
 import Insurance from "../components/Insurance";
-//import CarCards from '../components/CarCards';
-import CarList from '../car-list.json';
+import { Cars } from "../car-list.js";
 
-export default function Home() {
+// Get our props here.
+export const getStaticProps = async () => {
+  return {
+    props: {
+      carListData: Cars,
+    },
+  }
+}
+
+export default function Home({ carListData }) {
   const [show, setShow]=useState(true)
+  
   return (
-    <div className="">
+    <div>
       <Head>
         <title>DayDream Car Co.</title>
         <link rel="icon" href="/favicon.ico" />
@@ -32,38 +41,21 @@ export default function Home() {
       <main>
         
       
-      <div className='max-w-7xl mx-auto px-8 sm:px-16'>
+      <div className='max-w-7xl mx-auto px-8 sm:px-16 pb-8'>
         <section className='pt-6'>
           <h2 className='text-4xl font-semibold py-4'>Cars Here!</h2>
-            <div className='flex overflow-scroll scrollbar-hide px-3 py-1 -ml-3 space-x-2'>
-              <Cars/>
-              <Cars/>
-              <Cars/>
-              <Cars/>
-              <Cars/>
-              <Cars/>
+            {/* Logic will probably take place here */}
+            <div className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>
+              {carListData?.map(carData => (
+                <CarCards key={carData.name} {...carData} />
+              ))}
             </div>
-            <div className='flex overflow-scroll scrollbar-hide px-3 py-1 -ml-3 pb-8'>
-              <Cars/>
-              <Cars/>
-              <Cars/>
-              <Cars/>
-              <Cars/>
-              <Cars/>
-            </div>            
-
-          
-          {/* <div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3'>
-            {cardsData?.map(({img, title}: any) => (
-              <Cars key={img} img={img} title={title} />
-            ))}
-          </div>  */}
 
         </section>
       </div>
         <hr />
         {/* Insurance package section */}
-        <section>
+        <section className='pt-8'>
           <div className='bg-black font-bold text-white grid z-50 grid-cols-1 sm:grid-cols-2 mb-5'>
             <p className='my-auto justify-end font-extrabold text-3xl py-2 pl-10 sm:pl-20 md:pl-44 lg:pl-96 xl:pl-[500px]'>Extras</p>
             <p className='my-auto justify-start hidden sm:flex'>What would make your trip dreamy?</p>
@@ -87,15 +79,3 @@ export default function Home() {
     </div>
   );
 }
-
-// export async function getStaticProps() {
-//   const cardsData = await fetch("https://links.papareact.com/pyp").
-//   then((res) =>
-//     res.json()
-//   );
-//   return {
-//     props: {
-//       cardsData,
-//     },
-//   };
-// }

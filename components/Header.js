@@ -61,6 +61,7 @@ function Header() {
                     <button
                         className="flex flex-col h-10 w-10 border-2 border-black rounded justify-center items-center group"
                         onClick={() => setIsOpen(!isOpen)}
+                        data-target='navbarToken'
                     >
                         <div
                             className={`${genericHamburgerLine} ${
@@ -78,10 +79,9 @@ function Header() {
                             }`}
                         />
                     </button>
-                </div>                  
+                </div>                            
             </div>  
         </header>
-        
     );
 }
 
