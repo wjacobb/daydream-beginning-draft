@@ -17,6 +17,11 @@ function Header() {
     const { useState } = React;
     const [isOpen, setIsOpen] = useState(false);
     const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+    const router = useRouter();
+    const home = () => {router.push('/')}
+    const about = () => {router.push('/about')}
+    const features = () => {router.push('/features')}
+    const contact = () => {router.push('/contact')}
     return (
         <header className="sticky top-0 z-50 grid grid-cols-2 lg:grid-cols-3 bg-white shadow-md p-5 md:px-10">
             {/* Left */}
@@ -26,7 +31,7 @@ function Header() {
             </div>
 
             {/* Middle */}
-            <div className='hidden relative lg:grid h-10 w-full my-auto'>
+            <div className='hidden relative lg:grid h-10 w-20 my-auto'>
                 <a href="https://www.youtube.com/watch?v=uZ57I2A3j5Y">
                     <Image src="https://images.turo.com/media/vehicle/images/ABo9f8s3QLuBwkjCwE4PfQ.720x350.jpg"
                         layout="fill"
@@ -42,19 +47,10 @@ function Header() {
                 {/* Regular tabs */}
                 <div className='navbar-burger burger hidden lg:flex items-center lg:space-x-4 xl:space-x-6 justify-end text-black'>
                     {/* Header tabs */} 
-                    <a href="https://www.youtube.com/watch?v=CeYuFSBkkVw">
-                        <p className='hidden md:inline cursor-pointer'>Home</p>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=wDgQdr8ZkTw">
-                        <p className='hidden md:inline cursor-pointer'>About Us</p>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=tAVnGvRwXew">
-                        <p className='hidden md:inline cursor-pointer'>Features</p>
-                        
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=7lktMLiKaes">
-                        <p className='hidden md:inline cursor-pointer'>Contact</p>
-                    </a>
+                    <p onClick={home} className='hidden md:inline cursor-pointer'>Home</p>
+                    <p onClick={about} className='hidden md:inline cursor-pointer'>About Us</p>
+                    <p onClick={features} className='hidden md:inline cursor-pointer'>Features</p>                        
+                    <p onClick={contact} className='hidden md:inline cursor-pointer'>Contact</p>
                 </div>
                 {/* Hamburger Menu */}
                 <div className="flex justify-end lg:hidden">

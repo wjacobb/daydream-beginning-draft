@@ -2,7 +2,7 @@ export const Cars = [
     
     {   
         "name": "Mazda 6",
-        "imgURL": "https://images.turo.com/media/vehicle/images/XK4hR7ViR0q7f9xvcxJ4iQ.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/XK4hR7ViR0q7f9xvcxJ4iQ.500x500.jpg",
         "make": "Mazda",
         "model": "6",
         "year": "2000",
@@ -10,7 +10,7 @@ export const Cars = [
     },
     {   
         "name": "Tesla Model 3",
-        "imgURL": "https://images.turo.com/media/vehicle/images/ABo9f8s3QLuBwkjCwE4PfQ.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/ABo9f8s3QLuBwkjCwE4PfQ.500x500.jpg",
         "make": "Tesla",
         "model": "Model 3",
         "year": "2018",
@@ -18,7 +18,7 @@ export const Cars = [
     },
     {
         "name": "Audi S4",
-        "imgURL": "https://images.turo.com/media/vehicle/images/5N7Rk7ldRcCmjoLiVODbrg.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/5N7Rk7ldRcCmjoLiVODbrg.500x500.jpg",
         "make": "Audi",
         "model": "S4",
         "year": "2018",
@@ -26,7 +26,7 @@ export const Cars = [
     },
     {
         "name": "Tesla Model Y",
-        "imgURL": "https://images.turo.com/media/vehicle/images/vDppqP8HSQy7jyj5yDxAVQ.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/vDppqP8HSQy7jyj5yDxAVQ.500x500.jpg",
         "make": "Tesla",
         "model": "Y",
         "year": "2021",
@@ -34,7 +34,7 @@ export const Cars = [
     },
     {
         "name": "Porshe Macan",
-        "imgURL": "https://images.turo.com/media/vehicle/images/f3e7oVe3Ru-ViwBsNSmGIQ.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/f3e7oVe3Ru-ViwBsNSmGIQ.500x500.jpg",
         "make": "Porsche",
         "model": "Macan",
         "year": "2015",
@@ -42,7 +42,7 @@ export const Cars = [
     },
     {
         "name": "Nissan Versa Note",
-        "imgURL": "https://images.turo.com/media/vehicle/images/B0qzvPsMTwCoVauFTg2inA.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/B0qzvPsMTwCoVauFTg2inA.500x500.jpg",
         "make": "Nissan",
         "model": "Versa Note",
         "year": "2014",
@@ -50,7 +50,7 @@ export const Cars = [
     },
     {
         "name": "Toyota Camry",
-        "imgURL": "https://images.turo.com/media/vehicle/images/lUVotJW7RWWqy_FXAuN5yg.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/lUVotJW7RWWqy_FXAuN5yg.500x500.jpg",
         "make": "Toyota",
         "model": "Camry",
         "year": "2020",
@@ -58,7 +58,7 @@ export const Cars = [
     },
     {
         "name": "Toyota Corolla",
-        "imgURL": "https://images.turo.com/media/vehicle/images/OfL5GKIRTBed6TKcug7_mg.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/OfL5GKIRTBed6TKcug7_mg.500x500.jpg",
         "make": "Toyota",
         "model": "Corolla",
         "year": "2013",
@@ -66,7 +66,7 @@ export const Cars = [
     },
     {
         "name": "Nissan Versa",
-        "imgURL": "https://images.turo.com/media/vehicle/images/u7i6Hqh5RaezNMusjPEm3g.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/u7i6Hqh5RaezNMusjPEm3g.500x500.jpg",
         "make": "Nissan",
         "model": "Versa",
         "year": "2015",
@@ -74,7 +74,7 @@ export const Cars = [
     },
     {
         "name": "Mazda 3",
-        "imgURL": "https://images.turo.com/media/vehicle/images/n4wx6F0MQBS4MY3k2MhVKQ.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/n4wx6F0MQBS4MY3k2MhVKQ.500x500.jpg",
         "make": "Mazda",
         "model": "3",
         "year": "2013",
@@ -82,7 +82,7 @@ export const Cars = [
     },
     {
         "name": "Chevrolet Cruze",
-        "imgURL": "https://images.turo.com/media/vehicle/images/gaOwyKFdSGSgAizbzk37sw.720x350.jpg",
+        "imgURL": "https://images.turo.com/media/vehicle/images/gaOwyKFdSGSgAizbzk37sw.500x500.jpg",
         "make": "Chevrolet",
         "model": "Cruze",
         "year": "2016",

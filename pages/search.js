@@ -8,9 +8,9 @@ function Search({searchResults}) {
     const router = useRouter();
     //ES6 Destructuring
     const { location, startDate, endDate, noOfGuests} = router.query;
-    const formatttedStartDate = format(new Date(startDate), "dd MMMM yy")
-    const formatttedEndDate = format(new Date(endDate), "dd MMMM yy")
-    const range = `${formatttedStartDate} - ${formatttedEndDate}`;
+    const formattedStartDate = format(new Date(startDate), "dd MMMM yy")
+    const formattedEndDate = format(new Date(endDate), "dd MMMM yy")
+    const range = `${formattedStartDate} - ${formattedEndDate}`;
     
     return (
         <div>
