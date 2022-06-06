@@ -9,17 +9,19 @@ import CarCards from "../components/CarCards";
 import Calendar from "../components/Calendar";
 import Insurance from "../components/Insurance";
 import { Cars } from "../car-list.js";
+import { Extras } from "../extras-list.js"
 
 // Get our props here.
 export const getStaticProps = async () => {
   return {
     props: {
       carListData: Cars,
+      extrasData: Extras,
     },
   }
 }
 
-export default function Home({ carListData }) {
+export default function Home({ carListData, extrasData }) {
   const [show, setShow]=useState(true)
   
   return (
@@ -43,7 +45,7 @@ export default function Home({ carListData }) {
       
       <div className='max-w-7xl mx-auto px-8 sm:px-16 pb-8'>
         <section className='pt-6'>
-          <h2 className='text-4xl font-semibold py-4'>Cars Here!</h2>
+          <h2 className='text-4xl font-semibold py-4'>Select your car here!</h2>
             {/* Logic will probably take place here */}
             <div className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>
               {carListData?.map(carData => (
@@ -61,8 +63,10 @@ export default function Home({ carListData }) {
             <p className='my-auto justify-start hidden sm:flex'>What would make your trip dreamy?</p>
           </div>
 
-          <div className='max-w-3xl flex justify-center mx-auto pb-8'>
-            <Insurance/>
+          <div className='max-w-4xl justify-center mx-auto pr-2 pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+            {extrasData?.map(extraItemData => (
+                  <Insurance key={extraItemData.name} {...extraItemData} />
+                ))}
           </div>
         </section>
         

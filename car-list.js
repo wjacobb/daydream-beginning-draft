@@ -22,7 +22,7 @@ export const Cars = [
         "make": "Audi",
         "model": "S4",
         "year": "2018",
-        "price": "$89"
+        "price": "89"
     },
     {
         "name": "Tesla Model Y",
@@ -30,7 +30,7 @@ export const Cars = [
         "make": "Tesla",
         "model": "Y",
         "year": "2021",
-        "price": "$99"
+        "price": "99"
     },
     {
         "name": "Porshe Macan",
@@ -38,7 +38,7 @@ export const Cars = [
         "make": "Porsche",
         "model": "Macan",
         "year": "2015",
-        "price": "$101"
+        "price": "101"
     },
     {
         "name": "Nissan Versa Note",
@@ -46,7 +46,7 @@ export const Cars = [
         "make": "Nissan",
         "model": "Versa Note",
         "year": "2014",
-        "price": "$35"
+        "price": "35"
     },
     {
         "name": "Toyota Camry",
@@ -54,7 +54,7 @@ export const Cars = [
         "make": "Toyota",
         "model": "Camry",
         "year": "2020",
-        "price": "$49"
+        "price": "49"
     },
     {
         "name": "Toyota Corolla",
@@ -62,7 +62,7 @@ export const Cars = [
         "make": "Toyota",
         "model": "Corolla",
         "year": "2013",
-        "price": "$41"
+        "price": "41"
     },
     {
         "name": "Nissan Versa",
@@ -70,7 +70,7 @@ export const Cars = [
         "make": "Nissan",
         "model": "Versa",
         "year": "2015",
-        "price": "$35"
+        "price": "35"
     },
     {
         "name": "Mazda 3",
@@ -78,7 +78,7 @@ export const Cars = [
         "make": "Mazda",
         "model": "3",
         "year": "2013",
-        "price": "$34"
+        "price": "34"
     },
     {
         "name": "Chevrolet Cruze",
@@ -86,7 +86,7 @@ export const Cars = [
         "make": "Chevrolet",
         "model": "Cruze",
         "year": "2016",
-        "price": "$37"
+        "price": "37"
     }
 ]
 export default Cars;

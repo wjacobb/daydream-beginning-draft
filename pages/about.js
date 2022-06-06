@@ -3,13 +3,7 @@ import { useRouter } from "next/dist/client/router";
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from "../components/Header";
-import Banner from "../components/Banner";
-import LargeCard from "../components/LargeCard";
-import Price from "../components/Price";
-import CarCards from "../components/CarCards";
-import Calendar from "../components/Calendar";
-import Insurance from "../components/Insurance";
-import { Cars } from "../car-list.js";
+
 
 function About() {
     return(

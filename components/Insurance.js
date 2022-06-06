@@ -1,93 +1,16 @@
 import Image from 'next/image'
-import Road from '../img/road_icon.png'
-import Cooler from '../img/cooler_icon.jpeg'
-import Racetrack from '../img/racetrack_icon.jpeg'
-import Ski from '../img/ski_icon.jpeg'
-import Chair from '../img/chair_icon.jpg'
-import Sun from '../img/sun_icon.jpg'
-import Fuel from '../img/gas_icon.jpeg'
-import Camp from '../img/tent_icon.jpeg'
-import Roof from '../img/roof_icon.jpg'
-import Carseat from '../img/carseat_icon.png'
-import Parks from '../img/parks_icon.png'
-import Radar from '../img/radar_icon.jpg'
 
-function Insurance() {
+function Insurance({ name, imgURL, price }) {
     return(
         <div>
-            <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <section>
                 <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Road} layout='fill' className='rounded-lg'/>
+                    <div className='relative h-10 w-10 mx-2 mb-2'>
+                        <Image alt='my-image' src={imgURL} layout='fill' className='rounded-lg'/>
                     </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Unlimited miles</button>                
+                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">{name} ${price}</button>                
                 </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Cooler} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Cooler</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Racetrack} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Racetrack package</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Ski} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Ski rack</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Chair} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Camp chairs</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Sun} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Sun shade</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Fuel} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Prepaid refuel</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Camp} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Camp text</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Roof} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Roof storage</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Carseat} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Child carseat</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Parks} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">National Parks pass</button>                
-                </div>
-                <div className='flex items-center ml-8'>
-                    <div className='relative h-10 w-10 mx-2'>
-                        <Image alt='my-image' src={Radar} layout='fill' className='rounded-lg'/>
-                    </div>
-                    <button className="mb-2 w-full inline-block px-6 py-2.5 bg-green-800 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-green-900 hover:shadow-lg active:bg-green-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out hover:scale-105 active:scale-100">Radar detector</button>                
-                </div>
+                
             </section>
             
             {/* <form>
