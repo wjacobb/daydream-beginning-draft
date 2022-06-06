@@ -58,9 +58,12 @@ export default function Home({ carListData, extrasData }) {
         <hr />
         {/* Insurance package section */}
         <section className='pt-8'>
-          <div className='bg-black font-bold text-white grid z-50 grid-cols-1 sm:grid-cols-2 mb-5'>
-            <p className='my-auto flex justify-center sm:justify-end sm:pr-10 font-extrabold text-3xl py-2 pl-10'>Extras</p>
-            <p className='my-auto justify-start hidden sm:flex'>What would make your trip dreamy?</p>
+          <div className='bg-black font-bold text-white'>
+            <div className='maxw-4xl flex justify-center mb-5'>
+              <p className='my-auto flex justify-center sm:justify-end sm:pr-10 font-extrabold text-3xl py-2 pl-10'>Extras</p>
+              <p className='my-auto justify-start hidden sm:flex'>What would make your trip dreamy?</p>
+            </div>
+            
           </div>
 
           <div className='max-w-4xl justify-center mx-auto pr-2 pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
