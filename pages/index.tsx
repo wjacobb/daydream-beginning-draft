@@ -41,32 +41,33 @@ export default function Home({ carListData, extrasData }) {
       </section>
       
       <main>
-        
-      
-      <div className='max-w-7xl mx-auto px-8 sm:px-16 pb-8'>
-        <section className='pt-6'>
-          <h2 className='text-4xl font-semibold py-4'>Select your car here!</h2>
-            {/* Logic will probably take place here */}
-            <div className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>
-              {carListData?.map(carData => (
-                <CarCards key={carData.name} {...carData} />
-              ))}
-            </div>
 
-        </section>
-      </div>
+        {/* Try to split the cars into two separate rows. */}        
+        
+        <div className='max-w-7xl mx-auto px-8 sm:px-16 pb-8'>
+          <section className='pt-6'>
+            <h2 className='text-4xl font-semibold py-4'>Select your car here!</h2>
+              {/* Logic will probably take place here */}
+              <div className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>
+                {carListData?.map(carData => (
+                  <CarCards key={carData.name} {...carData} />
+                ))}
+              </div>
+              
+          </section>
+        </div>
         <hr />
         {/* Insurance package section */}
         <section className='pt-8'>
           <div className='bg-black font-bold text-white'>
             <div className='maxw-4xl flex justify-center mb-5'>
-              <p className='my-auto flex justify-center sm:justify-end sm:pr-10 font-extrabold text-3xl py-2 pl-10'>Extras</p>
+              <p className='my-auto flex justify-center sm:justify-end sm:pr-10 font-extrabold text-3xl py-2'>Extras</p>
               <p className='my-auto justify-start hidden sm:flex'>What would make your trip dreamy?</p>
             </div>
             
           </div>
 
-          <div className='max-w-4xl justify-center mx-auto pr-2 pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+          <div className='max-w-4xl justify-center mx-auto pr-2 pb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
             {extrasData?.map(extraItemData => (
                   <Insurance key={extraItemData.name} {...extraItemData} />
                 ))}

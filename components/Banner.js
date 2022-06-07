@@ -1,12 +1,11 @@
 import Image from "next/image"
-import Mazda from "../img/Mazda-6-2016.jpg"
 
 function Banner() {
     return (
         <div className='relative h-[300px] sm:h-[400] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]'>
             <Image
             alt='my-image'
-            src={Mazda}
+            src={"https://images.turo.com/media/vehicle/images/XK4hR7ViR0q7f9xvcxJ4iQ.1440x700.jpg"}
             layout='fill'
             objectFit='cover'
             />

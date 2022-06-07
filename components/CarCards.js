@@ -11,7 +11,7 @@ function CarCards({name, imgURL, price}) {
                     </div>
                     <div className="text-white bg-blue-700 absolute right-0 bottom-0 px-4 py-1 rounded-md flex">
                         <p className="text-xl font-semibold text-left">{name}</p>
-                        <p className="text-sm my-auto pl-3">${price}/day</p>
+                        <p className="text-sm pt-1 pl-3">${price}/day</p>
                     </div>
                 </div>
             </a>  
