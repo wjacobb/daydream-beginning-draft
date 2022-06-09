@@ -12,6 +12,8 @@ import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { DateRangePicker } from 'react-date-range';
 import { useRouter } from "next/dist/client/router"
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 function Header() {
     const { useState } = React;
@@ -29,7 +31,6 @@ function Header() {
                 <h1 className="font-bold text-xl">Daydream Car Company</h1>
                 <h2 className="hidden md:flex">&emsp;&emsp;Car rental you'll dream about</h2>
             </div>
-
             {/* Middle */}
             <div className='hidden relative lg:grid h-10 w-20 my-auto'>
                 <a href="https://www.youtube.com/watch?v=uZ57I2A3j5Y">
@@ -40,8 +41,7 @@ function Header() {
                         className="cursor-pointer"
                     />
                 </a>
-            </div>
-            
+            </div>            
             {/* Right */}
             <div className="my-auto">
                 {/* Regular tabs */}
@@ -53,8 +53,41 @@ function Header() {
                     <p onClick={contact} className='hidden md:inline cursor-pointer'>Contact</p>
                 </div>
                 {/* Hamburger Menu */}
-                <div className="flex justify-end lg:hidden">
-                    <button
+                <div className="flex justify-end lg:hidden container-layout">
+                    <Popup trigger={
+                        <button
+                        className="flex bg- flex-col h-10 w-10 border-2 border-black rounded justify-center items-center group container"
+                        onClick={() => setIsOpen(!isOpen)}
+                        data-target='navbarToken'
+                        position="right center">
+                            <div
+                                className={`${genericHamburgerLine} ${
+                                    isOpen
+                                        ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+                                        : "opacity-50 group-hover:opacity-100"
+                                }`}
+                            />
+                            <div className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
+                            <div
+                                className={`${genericHamburgerLine} ${
+                                    isOpen
+                                        ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+                                        : "opacity-50 group-hover:opacity-100"
+                                }`}
+                            />
+                        </button>
+                    }>
+                        <div className="mx-2 px-2">
+                            <p onClick={home} className='cursor-pointer hover:bg-gray-200'>Home</p>
+                            <p onClick={about} className='cursor-pointer hover:bg-gray-200'>About Us</p>
+                            <p onClick={features} className='cursor-pointer hover:bg-gray-200'>Features</p>                        
+                            <p onClick={contact} className='cursor-pointer hover:bg-gray-200'>Contact</p>
+                        </div>
+                    </Popup>
+                </div>
+                
+                {/* <div className="flex justify-end lg:hidden"> */}
+                    {/* <button
                         className="flex flex-col h-10 w-10 border-2 border-black rounded justify-center items-center group"
                         onClick={() => setIsOpen(!isOpen)}
                         data-target='navbarToken'
@@ -74,8 +107,8 @@ function Header() {
                                     : "opacity-50 group-hover:opacity-100"
                             }`}
                         />
-                    </button>
-                </div>                            
+                    </button> */}
+                {/* </div>                             */}
             </div>  
         </header>
     );

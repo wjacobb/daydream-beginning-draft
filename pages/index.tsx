@@ -53,7 +53,6 @@ export default function Home({ carListData, extrasData }) {
                   <CarCards key={carData.name} {...carData} />
                 ))}
               </div>
-              
           </section>
         </div>
         <hr />
@@ -63,26 +62,18 @@ export default function Home({ carListData, extrasData }) {
             <div className='maxw-4xl flex justify-center mb-5'>
               <p className='my-auto flex justify-center sm:justify-end sm:pr-10 font-extrabold text-3xl py-2'>Extras</p>
               <p className='my-auto justify-start hidden sm:flex'>What would make your trip dreamy?</p>
-            </div>
-            
+            </div>            
           </div>
-
+          {/* Loop through the JSON and get the data for the packages */}
           <div className='max-w-4xl justify-center mx-auto pr-2 pb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
             {extrasData?.map(extraItemData => (
                   <Insurance key={extraItemData.name} {...extraItemData} />
                 ))}
           </div>
         </section>
-        
         <hr/>
-        <LargeCard
-         img="https://links.papareact.com/4cj"
-         title="The Greatest Outdoors"
-         description="Wishlists curated by Airbnb."
-         buttonText="Get Inspired"
-        />
-        <Price />
-        
+        <LargeCard/>
+        <Price />        
       </main>
     </div>
   );

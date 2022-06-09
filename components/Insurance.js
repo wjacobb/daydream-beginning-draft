@@ -13,7 +13,6 @@ function Insurance({ name, imgURL, price }) {
                     </div>
                 </section>    
             </a>
-            
         </div>
     )
 }
