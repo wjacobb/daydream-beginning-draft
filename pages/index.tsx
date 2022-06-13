@@ -9,7 +9,8 @@ import CarCards from "../components/CarCards";
 import Calendar from "../components/Calendar";
 import Insurance from "../components/Insurance";
 import { Cars } from "../car-list.js";
-import { Extras } from "../extras-list.js"
+import { Extras } from "../extras-list.js";
+import { useUser } from '@auth0/nextjs-auth0';
 
 // Get our props here.
 export const getStaticProps = async () => {
@@ -23,6 +24,12 @@ export const getStaticProps = async () => {
 
 export default function Home({ carListData, extrasData }) {
   const [show, setShow]=useState(true)
+  const { user, error, isLoading } = useUser();
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error.message}</div>;
+
+  
   
   return (
     <div>

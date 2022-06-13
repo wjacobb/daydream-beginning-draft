@@ -14,6 +14,7 @@ import { DateRangePicker } from 'react-date-range';
 import { useRouter } from "next/dist/client/router"
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import { useUser } from '@auth0/nextjs-auth0';
 
 function Header() {
     const { useState } = React;
@@ -24,6 +25,8 @@ function Header() {
     const about = () => {router.push('/about')}
     const features = () => {router.push('/features')}
     const contact = () => {router.push('/contact')}
+    const signIn = () => {router.push('/signIn')}
+    // const signOut = () => {router.push('/signOut')}
     return (
         <header className="sticky top-0 z-50 grid grid-cols-2 lg:grid-cols-3 bg-white shadow-md p-5 md:px-10">
             {/* Left */}
@@ -51,6 +54,7 @@ function Header() {
                     <p onClick={about} className='hidden md:inline cursor-pointer'>About Us</p>
                     <p onClick={features} className='hidden md:inline cursor-pointer'>Features</p>                        
                     <p onClick={contact} className='hidden md:inline cursor-pointer'>Contact</p>
+                    <p onClick={signIn} className='hidden md:inline cursor-pointer'>Sign In</p>                  
                 </div>
                 {/* Hamburger Menu */}
                 <div className="flex justify-end lg:hidden container-layout">
@@ -82,6 +86,7 @@ function Header() {
                             <p onClick={about} className='cursor-pointer hover:bg-gray-200'>About Us</p>
                             <p onClick={features} className='cursor-pointer hover:bg-gray-200'>Features</p>                        
                             <p onClick={contact} className='cursor-pointer hover:bg-gray-200'>Contact</p>
+                            <p onClick={signIn} className='cursor-pointer hover:bg-gray-200'>Sign In</p>                  
                         </div>
                     </Popup>
                 </div>
