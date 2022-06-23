@@ -11,6 +11,7 @@ import Insurance from "../components/Insurance";
 import { Cars } from "../car-list.js";
 import { Extras } from "../extras-list.js";
 import { useUser } from '@auth0/nextjs-auth0';
+import Details from '../components/Details'
 
 // Get our props here.
 export const getStaticProps = async () => {
@@ -20,6 +21,20 @@ export const getStaticProps = async () => {
       extrasData: Extras,
     },
   }
+}
+
+export const  Demo = async () => {
+  return alert('Some fries!');
+}
+
+export function gimmeDeets({carListData}){
+  return(
+      <div>
+        <p>Hello There!</p>
+      </div>
+  ) 
+    
+  ;
 }
 
 export default function Home({ carListData, extrasData }) {
@@ -39,15 +54,14 @@ export default function Home({ carListData, extrasData }) {
       </Head>
 
       <Header />
-      
+
+      <main className='max-w-7xl mx-auto'>
       <section>
         <Banner />
         {/* <div className='max-w-md justify-center mx-auto pb-8'>
           <Calendar />
         </div> */}
       </section>
-      
-      <main>
 
         {/* Try to split the cars into two separate rows. */}        
         
@@ -55,10 +69,11 @@ export default function Home({ carListData, extrasData }) {
           <section className='pt-6'>
             <h2 className='text-4xl font-semibold py-4'>Select your car here!</h2>
               {/* Logic will probably take place here */}
-              <div className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>
-                {carListData?.map(carData => (
-                  <CarCards key={carData.name} {...carData} />
-                ))}
+              <div
+                className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>               
+                  {carListData?.map(carData => (
+                    <CarCards key={carData.name} {...carData} />
+                  ))}
               </div>
           </section>
         </div>
@@ -66,7 +81,7 @@ export default function Home({ carListData, extrasData }) {
         {/* Insurance package section */}
         <section className='pt-8'>
           <div className='bg-black font-bold text-white'>
-            <div className='maxw-4xl flex justify-center mb-5'>
+            <div className='max-w-4xl flex justify-center mb-5'>
               <p className='my-auto flex justify-center sm:justify-end sm:pr-10 font-extrabold text-3xl py-2'>Extras</p>
               <p className='my-auto justify-start hidden sm:flex'>What would make your trip dreamy?</p>
             </div>            

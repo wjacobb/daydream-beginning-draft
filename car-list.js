@@ -6,7 +6,8 @@ export const Cars = [
         "make": "Mazda",
         "model": "6",
         "year": "2000",
-        "price": "49"
+        "price": "49",
+        "description": "aaaaaaaaaaaaaaa"
     },
     {   
         "name": "Tesla Model 3",
@@ -14,7 +15,8 @@ export const Cars = [
         "make": "Tesla",
         "model": "Model 3",
         "year": "2018",
-        "price": "95"
+        "price": "95",
+        "description": "bbbbbbbbbbbbbbb"
     },
     {
         "name": "Audi S4",
@@ -22,7 +24,8 @@ export const Cars = [
         "make": "Audi",
         "model": "S4",
         "year": "2018",
-        "price": "89"
+        "price": "89",
+        "description": "cccccccccccccc"
     },
     {
         "name": "Tesla Model Y",
@@ -30,7 +33,8 @@ export const Cars = [
         "make": "Tesla",
         "model": "Y",
         "year": "2021",
-        "price": "99"
+        "price": "99",
+        "description": "dddddddddddddd"
     },
     {
         "name": "Porshe Macan",
@@ -38,7 +42,8 @@ export const Cars = [
         "make": "Porsche",
         "model": "Macan",
         "year": "2015",
-        "price": "101"
+        "price": "101",
+        "description": "eeeeeeeeeeeeeeee"
     },
     {
         "name": "Nissan Versa Note",
@@ -46,7 +51,8 @@ export const Cars = [
         "make": "Nissan",
         "model": "Versa Note",
         "year": "2014",
-        "price": "35"
+        "price": "35",
+        "description": "ffffffffffffffffff"
     },
     {
         "name": "Toyota Camry",
@@ -54,7 +60,8 @@ export const Cars = [
         "make": "Toyota",
         "model": "Camry",
         "year": "2020",
-        "price": "49"
+        "price": "49",
+        "description": "gggggggggggggggg"
     },
     {
         "name": "Toyota Corolla",
@@ -62,7 +69,8 @@ export const Cars = [
         "make": "Toyota",
         "model": "Corolla",
         "year": "2013",
-        "price": "41"
+        "price": "41",
+        "description": "hhhhhhhhhhhhhhh"
     },
     {
         "name": "Nissan Versa",
@@ -70,7 +78,8 @@ export const Cars = [
         "make": "Nissan",
         "model": "Versa",
         "year": "2015",
-        "price": "35"
+        "price": "35",
+        "description": "iiiiiiiiiiiiii"
     },
     {
         "name": "Mazda 3",
@@ -78,7 +87,8 @@ export const Cars = [
         "make": "Mazda",
         "model": "3",
         "year": "2013",
-        "price": "34"
+        "price": "34",
+        "description": "jjjjjjjjjjjjjjj"
     },
     {
         "name": "Chevrolet Cruze",
@@ -86,7 +96,8 @@ export const Cars = [
         "make": "Chevrolet",
         "model": "Cruze",
         "year": "2016",
-        "price": "37"
+        "price": "37",
+        "description": "kkkkkkkkkkkkkkkk"
     }
 ]
 export default Cars;

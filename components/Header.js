@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from 'react'
+import React from 'react';
 import { 
     GlobeAltIcon,
     MenuIcon,
@@ -15,6 +15,7 @@ import { useRouter } from "next/dist/client/router"
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { useUser } from '@auth0/nextjs-auth0';
+import Burger from './Burger.js'
 
 function Header() {
     const { useState } = React;
@@ -48,72 +49,18 @@ function Header() {
             {/* Right */}
             <div className="my-auto">
                 {/* Regular tabs */}
-                <div className='navbar-burger burger hidden lg:flex items-center lg:space-x-4 xl:space-x-6 justify-end text-black'>
+                <div className='navbar-burger burger hidden lg:flex items-center justify-end text-black'>
                     {/* Header tabs */} 
-                    <p onClick={home} className='hidden md:inline cursor-pointer'>Home</p>
-                    <p onClick={about} className='hidden md:inline cursor-pointer'>About Us</p>
-                    <p onClick={features} className='hidden md:inline cursor-pointer'>Features</p>                        
-                    <p onClick={contact} className='hidden md:inline cursor-pointer'>Contact</p>
-                    <p onClick={signIn} className='hidden md:inline cursor-pointer'>Sign In</p>                  
+                    <button onClick={home} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>Home</button>
+                    <button onClick={about} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>About Us</button>
+                    <button onClick={features} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>Features</button>                        
+                    <button onClick={contact} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>Contact</button>
+                    <button onClick={signIn} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>Sign In</button>                  
                 </div>
                 {/* Hamburger Menu */}
-                <div className="flex justify-end lg:hidden container-layout">
-                    <Popup trigger={
-                        <button
-                        className="flex bg- flex-col h-10 w-10 border-2 border-black rounded justify-center items-center group container"
-                        onClick={() => setIsOpen(!isOpen)}
-                        data-target='navbarToken'
-                        position="right center">
-                            <div
-                                className={`${genericHamburgerLine} ${
-                                    isOpen
-                                        ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
-                                        : "opacity-50 group-hover:opacity-100"
-                                }`}
-                            />
-                            <div className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
-                            <div
-                                className={`${genericHamburgerLine} ${
-                                    isOpen
-                                        ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
-                                        : "opacity-50 group-hover:opacity-100"
-                                }`}
-                            />
-                        </button>
-                    }>
-                        <div className="mx-2 px-2">
-                            <p onClick={home} className='cursor-pointer hover:bg-gray-200'>Home</p>
-                            <p onClick={about} className='cursor-pointer hover:bg-gray-200'>About Us</p>
-                            <p onClick={features} className='cursor-pointer hover:bg-gray-200'>Features</p>                        
-                            <p onClick={contact} className='cursor-pointer hover:bg-gray-200'>Contact</p>
-                            <p onClick={signIn} className='cursor-pointer hover:bg-gray-200'>Sign In</p>                  
-                        </div>
-                    </Popup>
+                <div className="lg:hidden">
+                    <Burger/>
                 </div>
-                
-                {/* <div className="flex justify-end lg:hidden"> */}
-                    {/* <button
-                        className="flex flex-col h-10 w-10 border-2 border-black rounded justify-center items-center group"
-                        onClick={() => setIsOpen(!isOpen)}
-                        data-target='navbarToken'
-                    >
-                        <div
-                            className={`${genericHamburgerLine} ${
-                                isOpen
-                                    ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
-                                    : "opacity-50 group-hover:opacity-100"
-                            }`}
-                        />
-                        <div className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
-                        <div
-                            className={`${genericHamburgerLine} ${
-                                isOpen
-                                    ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
-                                    : "opacity-50 group-hover:opacity-100"
-                            }`}
-                        />
-                    </button> */}
-                {/* </div>                             */}
             </div>  
         </header>
     );
