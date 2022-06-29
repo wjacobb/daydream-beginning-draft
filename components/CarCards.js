@@ -1,9 +1,10 @@
 import Image from "next/image"
 import Details from './Details'
 
+//Don't put the onClick function here, because it loops for each car via the index file.
 function CarCards({name, imgURL, price}) {
     return (
-        <div className="pb-2">
+        <div className="pb-2 transition duration-150 ease-in-out active:scale-95">
             <button>
                 <div className="cursor-pointer max-w-[321px] min-w-[320px] relative">
                     <div className="relative h-80 w-80 bg-fixed opacity-100 hover:opacity-80 transition duration-300 ease-in-out">

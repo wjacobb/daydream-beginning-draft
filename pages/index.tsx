@@ -22,29 +22,23 @@ export const getStaticProps = async () => {
     },
   }
 }
-
-export const  Demo = async () => {
-  return alert('Some fries!');
-}
-
-export function gimmeDeets({carListData}){
-  return(
-      <div>
-        <p>Hello There!</p>
-      </div>
-  ) 
-    
-  ;
-}
+// export const helloThere = async ({name, imgURL, price, description}) => {
+//   <div>
+//       <h3>Hello there!</h3>
+//       <Image src='https://1.bp.blogspot.com/-jqdDGUiT524/WVLe18tjTuI/AAAAAAAAMrY/bFBVWywp3nMPEPuml_0_P9ItOSvR_dxUACLcBGAs/s1600/30%2BAdorable%2BDog%2BMemes%2BThat%2BWill%2BMake%2BYour%2BDay.jpg' layout='fill' className='rounded-md'/>
+//       <p>$Credits will work</p>
+//       <p>I will do what I must</p>
+//   </div>
+// }
 
 export default function Home({ carListData, extrasData }) {
-  const [show, setShow]=useState(true)
+  const [show, setShow]=useState(false)
   const { user, error, isLoading } = useUser();
-
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+  const [isOpen, setIsOpen] = useState(false);
+  
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;
-
-  
   
   return (
     <div>
@@ -52,36 +46,83 @@ export default function Home({ carListData, extrasData }) {
         <title>DayDream Car Co.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
-
       <main className='max-w-7xl mx-auto'>
+      
       <section>
+        <div>
         <Banner />
-        {/* <div className='max-w-md justify-center mx-auto pb-8'>
-          <Calendar />
-        </div> */}
+          <button className="text-white bg-blue-700 active:bg-blue-800 absolute top-1/3 left-1/4 px-4 py-1 rounded-md hover:scale-105 transition ease-in-out duration-300 hover:shadow-xl active:scale-100">
+            <a href='#calendar-section'>
+              <div className="text-xl font-extrabold text-left">
+                <h1>&emsp;Date</h1>
+              </div>
+              <div>
+                  <h2>When do you need a car?</h2>
+              </div>
+            </a>
+          </button>
+        </div>
       </section>
 
-        {/* Try to split the cars into two separate rows. */}        
+      <section id='calendar-section' className='max-w-7xl mx-auto px-8 sm:px-16 pb-8'>
+        <h2 className='text-4xl font-semibold py-4'>Select a time!</h2>
+        <div className='flex justify-center'>
+          <Calendar/>
+        </div>
+      </section>
+      <hr/>
         
+        {/* Try to split the cars into two separate rows. */}        
         <div className='max-w-7xl mx-auto px-8 sm:px-16 pb-8'>
           <section className='pt-6'>
             <h2 className='text-4xl font-semibold py-4'>Select your car here!</h2>
-              {/* Logic will probably take place here */}
-              <div
-                className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>               
-                  {carListData?.map(carData => (
-                    <CarCards key={carData.name} {...carData} />
-                  ))}
-              </div>
+            {/* Logic will probably take place here */}
+            <div
+              className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>               
+                {carListData?.map(carData => (
+                  <CarCards key={carData.name} {...carData} />
+                ))}
+            </div>
           </section>
         </div>
         <hr />
+
+        <section>
+          <div className='flex justify-center'>
+            {
+              show?
+              <div className='shadow-2xl rounded-lg border-2'>
+                <div className='grid grid-cols-2'>
+                  <h3 className='flex justify-start text-4xl pl-3 py-3'><strong>Car title here</strong></h3>
+                  <button className='flex justify-end my-auto mr-6' onClick={()=>setShow(false)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div className='flex justify-center mx-5'>
+                  <img src='https://images.turo.com/media/vehicle/images/gaOwyKFdSGSgAizbzk37sw.500x500.jpg' layout='fill' className='rounded-md'/>
+                </div>
+                <div className='p-3 max-w-xl'>
+                  <p>$<u>Credits will work</u></p>
+                  <p>Description:</p>
+                  <p>Tis but a scratch! A scratch? Your arm's off! What makes you think she's a witch? Well, she turned me into a newt! A newt? ... I got better.</p>
+                  <p className='mt-2'>Specifications:</p>
+                  <p>Over here old friend! In case you haven't noticed, you've fallen right into my trap. You can't trap justice. It's an idea, a belief! But even the most heartfelt belief can be corroded over time. Justice is a non-corrosive metal. But metals can be melted by the heat of ravange! It's 'revenge', and it's best served cold! But it can be easily reheated in teh microwave of evil! Well, I think your warranty's about to expire! Maybe I got an extended warranty! Warranties are invalid if you don't use the product for its intended purpose!</p>
+                  <button className='bg-blue-700 px-4 py-2 font-bold rounded-md text-white mt-2 hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl bg-fixed opacity-100 md:max-w-sm active:scale-100'>Reserve</button>
+                </div>
+              </div>:null
+            }
+          </div>
+          <button onClick={()=>setShow(true)}>Show</button>
+
+        </section>
+
         {/* Insurance package section */}
         <section className='pt-8'>
           <div className='bg-black font-bold text-white'>
-            <div className='max-w-4xl flex justify-center mb-5'>
+            <div className='flex justify-center mb-5'>
               <p className='my-auto flex justify-center sm:justify-end sm:pr-10 font-extrabold text-3xl py-2'>Extras</p>
               <p className='my-auto justify-start hidden sm:flex'>What would make your trip dreamy?</p>
             </div>            
@@ -94,6 +135,7 @@ export default function Home({ carListData, extrasData }) {
           </div>
         </section>
         <hr/>
+
         <LargeCard/>
         <Price />        
       </main>

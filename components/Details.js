@@ -9,7 +9,8 @@ function gimmeDeets({description}){
 function Details ({name, imgURL, price, description}) {
     return(
         <div>
-            <button onClick={gimmeDeets}>
+            <p>Shalom my good chum!</p>
+            {/* <button onClick={gimmeDeets}>
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                     <div className="cursor-pointer max-w-[321px] min-w-[320px] relative">    
                         <div className="relative h-80 w-80 bg-fixed opacity-100 hover:opacity-80 transition duration-300 ease-in-out">
@@ -22,7 +23,7 @@ function Details ({name, imgURL, price, description}) {
                     </div>
                 </a>  
                 <p>{description}</p>
-            </button>
+            </button> */}
             
         </div>
     )

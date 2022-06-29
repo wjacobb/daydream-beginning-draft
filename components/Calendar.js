@@ -14,7 +14,7 @@ function Calendar() {
     const [searchInput, setSearchInput] = useState('')
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
-    const [noOfGuests, setNoOfGuests] = useState(1);
+    // const [noOfGuests, setNoOfGuests] = useState(1);
 
 
     const selectionRange = {
@@ -59,8 +59,6 @@ function Calendar() {
                     placeholder={"Start your search"} 
                     />
                 </div> */}
-
-                
                 {(
                 <div className='flex flex-col col-span-3 mx-auto mt-5'>
                     <DateRangePicker ranges={[selectionRange]} 
@@ -76,7 +74,6 @@ function Calendar() {
                 </div>
                 )}  
             </section>
-            
         </div>
     );
     
