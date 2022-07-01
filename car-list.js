@@ -1,5 +1,4 @@
 export const Cars = [
-    
     {   
         "name": "Mazda 6",
         "imgURL": "https://images.turo.com/media/vehicle/images/XK4hR7ViR0q7f9xvcxJ4iQ.500x500.jpg",
@@ -7,7 +6,8 @@ export const Cars = [
         "model": "6",
         "year": "2000",
         "price": "49",
-        "description": "aaaaaaaaaaaaaaa"
+        "description": "aaaaaaaaaaaaaaa",
+        "specs": "11111111111111111"
     },
     {   
         "name": "Tesla Model 3",
@@ -16,7 +16,8 @@ export const Cars = [
         "model": "Model 3",
         "year": "2018",
         "price": "95",
-        "description": "bbbbbbbbbbbbbbb"
+        "description": "bbbbbbbbbbbbbbb",
+        "specs": "222222222222222222"
     },
     {
         "name": "Audi S4",
@@ -25,7 +26,8 @@ export const Cars = [
         "model": "S4",
         "year": "2018",
         "price": "89",
-        "description": "cccccccccccccc"
+        "description": "cccccccccccccc",
+        "specs": "333333333333333333"
     },
     {
         "name": "Tesla Model Y",
@@ -34,7 +36,8 @@ export const Cars = [
         "model": "Y",
         "year": "2021",
         "price": "99",
-        "description": "dddddddddddddd"
+        "description": "dddddddddddddd",
+        "specs": "4444444444444444"
     },
     {
         "name": "Porshe Macan",
@@ -43,7 +46,8 @@ export const Cars = [
         "model": "Macan",
         "year": "2015",
         "price": "101",
-        "description": "eeeeeeeeeeeeeeee"
+        "description": "eeeeeeeeeeeeeeee",
+        "specs": "5555555555555555555"
     },
     {
         "name": "Nissan Versa Note",
@@ -52,7 +56,8 @@ export const Cars = [
         "model": "Versa Note",
         "year": "2014",
         "price": "35",
-        "description": "ffffffffffffffffff"
+        "description": "ffffffffffffffffff",
+        "specs": "6666666666666666666"
     },
     {
         "name": "Toyota Camry",
@@ -61,7 +66,8 @@ export const Cars = [
         "model": "Camry",
         "year": "2020",
         "price": "49",
-        "description": "gggggggggggggggg"
+        "description": "gggggggggggggggg",
+        "specs": "7777777777777777777777"
     },
     {
         "name": "Toyota Corolla",
@@ -70,7 +76,8 @@ export const Cars = [
         "model": "Corolla",
         "year": "2013",
         "price": "41",
-        "description": "hhhhhhhhhhhhhhh"
+        "description": "hhhhhhhhhhhhhhh",
+        "specs": "88888888888888888888"
     },
     {
         "name": "Nissan Versa",
@@ -79,7 +86,8 @@ export const Cars = [
         "model": "Versa",
         "year": "2015",
         "price": "35",
-        "description": "iiiiiiiiiiiiii"
+        "description": "iiiiiiiiiiiiii",
+        "specs": "9999999999999999999"
     },
     {
         "name": "Mazda 3",
@@ -88,7 +96,8 @@ export const Cars = [
         "model": "3",
         "year": "2013",
         "price": "34",
-        "description": "jjjjjjjjjjjjjjj"
+        "description": "jjjjjjjjjjjjjjj",
+        "specs": "000000000000000000"
     },
     {
         "name": "Chevrolet Cruze",
@@ -97,7 +106,8 @@ export const Cars = [
         "model": "Cruze",
         "year": "2016",
         "price": "37",
-        "description": "kkkkkkkkkkkkkkkk"
+        "description": "kkkkkkkkkkkkkkkk",
+        "specs": "0123456789"
     }
 ]
 export default Cars;
