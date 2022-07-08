@@ -32,9 +32,9 @@ export const getStaticProps = async () => {
 // }
 
 export default function Home({ carListData, extrasData }) {
-  const [show, setShow]=useState(false)
+  const [show, setShow]=useState(false);
   const { user, error, isLoading } = useUser();
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+  // const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
   const [isOpen, setIsOpen] = useState(false);
   
   if (isLoading) return <div>Loading...</div>;
