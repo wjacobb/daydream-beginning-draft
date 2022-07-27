@@ -22,20 +22,12 @@ export const getStaticProps = async () => {
     },
   }
 }
-// export const helloThere = async ({name, imgURL, price, description}) => {
-//   <div>
-//       <h3>Hello there!</h3>
-//       <Image src='https://1.bp.blogspot.com/-jqdDGUiT524/WVLe18tjTuI/AAAAAAAAMrY/bFBVWywp3nMPEPuml_0_P9ItOSvR_dxUACLcBGAs/s1600/30%2BAdorable%2BDog%2BMemes%2BThat%2BWill%2BMake%2BYour%2BDay.jpg' layout='fill' className='rounded-md'/>
-//       <p>$Credits will work</p>
-//       <p>I will do what I must</p>
-//   </div>
-// }
 
 export default function Home({ carListData, extrasData }) {
   const [show, setShow]=useState(false);
   const { user, error, isLoading } = useUser();
-  // const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
   const [isOpen, setIsOpen] = useState(false);
+
   
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;

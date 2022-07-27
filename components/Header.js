@@ -20,7 +20,6 @@ import Burger from './Burger.js'
 function Header() {
     const { useState } = React;
     const [isOpen, setIsOpen] = useState(false);
-    const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
     const router = useRouter();
     const home = () => {router.push('/')}
     const about = () => {router.push('/about')}
