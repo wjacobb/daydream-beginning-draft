@@ -23,12 +23,11 @@ function Burger () {
             {
               show?
               <div className="mx-2 px-2">
-                <p onClick={home} className='cursor-pointer hover:bg-gray-200 pl-2 rounded-sm'>Home</p>
-                <p onClick={about} className='cursor-pointer hover:bg-gray-200 pl-2 rounded-sm pr-1'>About Us</p>
-                <p onClick={features} className='cursor-pointer hover:bg-gray-200 pl-2 rounded-sm'>Features</p>                        
-                <p onClick={contact} className='cursor-pointer hover:bg-gray-200 pl-2 rounded-sm'>Contact</p>
+                <p onClick={home} className='cursor-pointer hover:bg-gray-200 px-2 rounded-sm'>Home</p>
+                <p onClick={features} className='cursor-pointer hover:bg-gray-200 px-2 rounded-sm'>Features</p>                        
+                <p onClick={contact} className='cursor-pointer hover:bg-gray-200 px-2 rounded-sm'>Contact</p>
                 <hr/>
-                <p onClick={signIn} className='cursor-pointer hover:bg-gray-200 pl-2 rounded-sm'>Sign In</p>                  
+                <p onClick={signIn} className='cursor-pointer hover:bg-gray-200 px-2 rounded-sm'>Sign In</p>                  
             </div>:null
             }
           </div>

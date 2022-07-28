@@ -30,7 +30,7 @@ function Header() {
     return (
         <header className="sticky top-0 z-10 grid grid-cols-2 lg:grid-cols-3 bg-white shadow-md p-5 md:px-10">
             {/* Left */}
-            <div>
+            <div onClick={home} className="cursor-pointer">
                 <h1 className="font-bold text-xl">Daydream Car Company</h1>
                 <h2 className="hidden md:flex">&emsp;&emsp;Car rental you'll dream about</h2>
             </div>
@@ -51,7 +51,6 @@ function Header() {
                 <div className='navbar-burger burger hidden lg:flex items-center justify-end text-black'>
                     {/* Header tabs */} 
                     <button onClick={home} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>Home</button>
-                    <button onClick={about} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>About Us</button>
                     <button onClick={features} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>Features</button>                        
                     <button onClick={contact} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>Contact</button>
                     <button onClick={signIn} className='hidden md:inline cursor-pointer hover:underline lg:px-2 rounded-md py-1'>Sign In</button>                  

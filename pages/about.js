@@ -8,8 +8,8 @@ import Header from "../components/Header";
 function About() {
     return(
         <div>
-            <Header />
-            <p>This is the about us page!</p>
+
+
         </div>
     )
 }

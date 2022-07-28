@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {format} from 'date-fns'
 import Card from '../components/CarCards'
+import Head from 'next/head';
+
 
 function Search({searchResults}) {
     const router = useRouter();

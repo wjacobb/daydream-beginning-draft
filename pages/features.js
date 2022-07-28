@@ -14,6 +14,10 @@ import { Cars } from "../car-list.js";
 function Features() {
     return(
         <div>
+            <Head>
+                <title>DayDream | Features</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Header />
             <p>This is the Features page!</p>
         </div>
