@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import React, {useState } from 'react';
+import React, {useState} from 'react';
 import Calendar from "./Calendar";
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import {Carousel} from 'react-responsive-carousel'

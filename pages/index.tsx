@@ -12,6 +12,7 @@ import { Cars } from "../car-list.js";
 import { Extras } from "../extras-list.js";
 import { useUser } from '@auth0/nextjs-auth0';
 import Details from '../components/Details'
+import Car_0 from '../components/car-0'
 
 // Get our props here.
 export const getStaticProps = async () => {
@@ -25,6 +26,7 @@ export const getStaticProps = async () => {
 
 export default function Home({ carListData, extrasData }) {
   const [show, setShow]=useState(false);
+  const [show1, setShow1]=useState(false);
   const { user, error, isLoading } = useUser();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -64,57 +66,29 @@ export default function Home({ carListData, extrasData }) {
         </div>
       </section>
       <hr/>
-        
-      <section>
-          <div className='flex justify-center'>
-            {
-              show?
-              <div className='shadow-2xl rounded-lg border-2'>
-                {carListData.map(car => {
-                  return (
-                    <div>
-                      <div className='grid grid-cols-2'>
-                        <h3 className='flex justify-start text-4xl pl-3 py-3'><strong>{car.name}</strong></h3>
-                        <button className='flex justify-end my-auto mr-6' onClick={()=>setShow(false)}>
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                          </svg>
-                        </button>
-                      </div>
-                      <div className='flex justify-center mx-5'>
-                        <img src={car.imgURL} layout='fill' className='rounded-md'/>
-                      </div>
-                      <div className='p-3 max-w-xl'>
-                        <p>$<u>{car.price}/day</u></p>
-                        <p>Description:</p>
-                        <p>{car.description}</p>
-                        <p className='mt-2'>Specifications:</p>
-                        <p>{car.specs}</p>
-                        <button className='bg-blue-700 px-4 py-2 font-bold rounded-md text-white mt-2 hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl bg-fixed opacity-100 md:max-w-sm active:scale-100'>Reserve</button>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>:null
-            }
+      {/* Try to split the cars into two separate rows. */}        
+      <div className='max-w-7xl mx-auto px-8 sm:px-16 pb-8'>
+        <section className='pt-6'>
+          <h2 className='text-4xl font-semibold py-4'>Select your car here!</h2>
+          {/* Logic will probably take place here */}
+          <div className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>
+            <div className='flex space-x-2'>
+              <Car_0 key={carListData.name} {...carListData[0]} />
+              <Car_0 key={carListData.name} {...carListData[1]} />
+              <Car_0 key={carListData.name} {...carListData[2]} />
+              <Car_0 key={carListData.name} {...carListData[3]} />
+              <Car_0 key={carListData.name} {...carListData[4]} />
+              <Car_0 key={carListData.name} {...carListData[5]} />
+              <Car_0 key={carListData.name} {...carListData[6]} />
+              <Car_0 key={carListData.name} {...carListData[7]} />
+              <Car_0 key={carListData.name} {...carListData[8]} />
+              <Car_0 key={carListData.name} {...carListData[9]} />
+              <Car_0 key={carListData.name} {...carListData[10]} />
+            </div>
           </div>
         </section>
-        {/* Try to split the cars into two separate rows. */}        
-        <div className='max-w-7xl mx-auto px-8 sm:px-16 pb-8'>
-          <section className='pt-6'>
-            <h2 className='text-4xl font-semibold py-4'>Select your car here!</h2>
-            {/* Logic will probably take place here */}
-            <div
-              className='flex scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded-lg py-1 -ml-3 space-x-2'>               
-                {carListData?.map(carData => (
-                  <div onClick={()=>setShow(true)}>
-                    <CarCards key={carData.name} {...carData}  />
-                  </div>
-                ))}
-            </div>
-          </section>
-        </div>
-        <hr />
+      </div>
+      <hr />
 
         {/* Insurance package section */}
         <section className='pt-8'>

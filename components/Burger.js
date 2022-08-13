@@ -31,7 +31,6 @@ function Burger () {
             </div>:null
             }
           </div>
-
         <MenuIcon onClick={()=>setShow(!show)} className='h-6 cursor-pointer hover:animate-pulse'/>
     </div>
   )
