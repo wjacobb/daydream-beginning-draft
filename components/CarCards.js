@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Details from './Details'
 
 //Don't put the onClick function here, because it loops for each car via the index file.
 function CarCards({name, imgURL, price}) {

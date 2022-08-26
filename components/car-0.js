@@ -7,12 +7,12 @@ function car_0({name, imgURL, price, description, specs}) {
     const [show, setShow]=useState(false);
 
     return(
-        <section>
+        <section className='mb-5'>
             <div className="pb-2 transition duration-150 ease-in-out active:scale-95">
                 <button onClick={()=>setShow(true)}>
                     <div className="cursor-pointer relative">
                         <div className="relative h-96 w-96 bg-fixed opacity-100 hover:opacity-80 transition duration-300 ease-in-out">
-                            <Image src={imgURL} layout="fill" className="rounded-md"/>
+                            <Image loading="lazy" src={imgURL} layout="fill" className="rounded-md"/>
                         </div>
                         <div className="text-white bg-blue-700 absolute right-0 bottom-0 px-4 py-1 rounded-md flex">
                             <p className="text-xl font-semibold text-left">{name}</p>
@@ -34,7 +34,7 @@ function car_0({name, imgURL, price, description, specs}) {
                           </svg>
                         </button>
                       </div>
-                      <div className='flex justify-center mx-5'>
+                      <div className='flex justify-center mx-3'>
                         <img src={imgURL} layout='fill' className='rounded-md'/>
                       </div>
                       <div className='p-3 max-w-xl'>

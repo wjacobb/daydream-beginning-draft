@@ -4,7 +4,8 @@ import Head from 'next/head';
 import Header from "../components/Header";
 import { 
     PhoneIcon,
- } from '@heroicons/react/solid'
+ } from '@heroicons/react/solid';
+import Indy from "../img/IMG_1668.jpg";
 
 function Contact() {
     return(
@@ -17,21 +18,22 @@ function Contact() {
             <section className='max-w-2xl mx-auto'>
                 <div className='mt-12 mx-10'>
                     <h2 className='text-3xl'><strong>About Us!</strong></h2>
-                    <p className='mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p className='mt-4'>Here at Daydream we strive to offer more affordable and personal services. We hope you enjoy your rental as we strive to be flexible and helpful in any way we can provide. What started as a smaller operation is now starting to grow into a more collective agency.</p>
                 </div>
             </section>
             <section className='max-w-2xl mx-auto'>
                 <div className='grid sm:grid-cols-2'>
-                    <div className='mt-10 ml-16'>
-                        <img src="https://4.bp.blogspot.com/-LoC2ai1MdQU/WWqJUJJAbOI/AAAAAAAADcc/oz46ezACjVUhrZJIYxEn_uxLmOpakTX-gCLcBGAs/s1600/Indiana%2BJones%2B%2528I%2529.jpg" className="object-cover h-40 w-40 rounded-full"/>
+                    
+                    <div className='mt-10 ml-16 mr-4'>
+                        <Image src={Indy} className="object-cover h-40 w-40 rounded-lg"/>
                     </div>
                     <div className='ml-5 my-10 sm:ml-0 pt-5'>
                         <p><strong>Indy Heaton</strong></p>
                         <div className='flex'>
                             <PhoneIcon className='h-5 mt-1'/>
-                            <p className='ml-2'>(123)-111-2222</p>
+                            <p className='ml-2'>(801)-550-1734</p>
                         </div>
-                        <p>fakeindyemail@gmail.com</p>
+                        <p>indyheaton@gmail.com</p>
                         <p>175 W 2700 S Salt Lake City, UT 84115</p>
                         <p className='sm:hidden'>Find us using Google Maps <a href="https://www.google.com/maps/place/175+W+2700+S,+South+Salt+Lake,+UT+84115/@40.7121936,-111.9051829,15z/data=!3m1!4b1!4m5!3m4!1s0x87528ae76d662779:0x744b47e707ced439!8m2!3d40.7121939!4d-111.8964496" className=' text-blue-500'>here</a>.</p>
                     </div>
